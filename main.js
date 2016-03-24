@@ -1,5 +1,6 @@
-var entrypoint = require('.').entrypoint
+var entrypoint = require('./index')
+var commands = require('./commands')
 
 var argv = process.argv.slice(2)
 
-entrypoint(argv)
+entrypoint(argv, commands)

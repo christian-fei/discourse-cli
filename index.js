@@ -1,17 +1,7 @@
-function entrypoint(argv) {
-  console.log( '-- argv', argv)
+module.exports = function entrypoint(argv, commands) {
   var command = argv[0]
   if('help' === command) {
-    return executeHelpCommand()
+    return commands.help()
   }
 }
 
-function executeHelpCommand() {
-  console.log( '-- help' )
-}
-
-
-module.exports = {
-  entrypoint: entrypoint,
-  executeHelpCommand: executeHelpCommand,
-}

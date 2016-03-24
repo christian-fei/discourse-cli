@@ -2,7 +2,7 @@
   "name": "discourse-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "mocha index.test.js",
     "test-watch": "mocha index.test.js --watch"
